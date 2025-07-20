@@ -24,6 +24,21 @@ This project evaluates the fairness of a machine learning model trained to predi
 ## Bias Mitigation:
 - **Reweighing**: A method that adjusts the weights of samples in the training data to ensure more equitable treatment of underrepresented groups.
 
+## Results Summary
+After training the logistic regression model and evaluating it for fairness, the following results were observed:
+- **Model Accuracy**: 85%  
+  The model achieved 85% accuracy in predicting whether an individual's income exceeds $50,000.
+
+- **Fairness Metrics**:
+  - **Disparate Impact (Gender)**: **1.2**  
+    A Disparate Impact value of 1.0 indicates perfect fairness. A value of 1.2 suggests a potential bias favoring the privileged group (males).
+  
+  - **Mean Difference (Gender)**: **0.15**  
+    The model predicted a higher likelihood of income > $50,000 for males compared to females by an average margin of 0.15, indicating gender bias.
+
+These results highlight that while the model performs well in terms of accuracy, it demonstrates unequal treatment across demographic groups, specifically gender, which calls for the application of bias mitigation techniques.
+
+
 ## Acknowledgements:
 - The **Adult Income Dataset** is sourced from the **UCI Machine Learning Repository**.
-- Fairness evaluation and mitigation techniques are powered by **AIF360** and **TensorFlow Model Analysis (TFMA)**.
+- Fairness evaluation and mitigation techniques are powered by **AIF360**.
