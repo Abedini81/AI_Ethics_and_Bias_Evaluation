@@ -24,7 +24,7 @@ This project evaluates the fairness of a machine learning model trained to predi
 ## Bias Mitigation:
 - **Reweighing**: A method that adjusts the weights of samples in the training data to ensure more equitable treatment of underrepresented groups.
 
-## Results Summary
+## Results
 After training the logistic regression model and evaluating it for fairness, the following results were observed:
 - **Model Accuracy**: 85%  
   The model achieved 85% accuracy in predicting whether an individual's income exceeds $50,000.
